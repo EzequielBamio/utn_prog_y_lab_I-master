@@ -1,0 +1,31 @@
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include "Struct.h"
+#include "Struct.Tipo.h"
+#include "Struct.Nacionalidad.h"
+
+
+#ifndef UTN_GET_H_
+#define UTN_GET_H_
+
+// MENU
+void Nacionalidad_SubMenu(eProducto pListaProducto[], int tProducto, eNacionalidad pListaNacionalidad[], int tNacionalidad);
+void Tipo_SubMenu(eProducto pListaProducto[], int tProducto, eTipoProducto pListaTipo[], int tTipo);
+
+/******/
+int Confirmar_Respuesta(char mensaje[], char mensajeError[]);
+void get_Descripcion(char pResultado[], int tResultado, char mensaje[]);
+void myGets(char [], int , char []);
+void getInt(int*, char []);
+void utn_getNumero(int*, char [], int , int );
+void getFloat(float*, char []);
+void utn_getNumeroFlotante(float*, char [], float , float );
+
+int esNumerica(char []);
+int esFlotante(char []);
+int esCaracterConEspacio(char []);
+int esCaracter(char []);
+
+#endif /* UTN_GET_H_ */
